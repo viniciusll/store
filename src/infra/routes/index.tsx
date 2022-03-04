@@ -6,8 +6,8 @@ import {
     Link
 } from "react-router-dom";
 
-import { Home } from "../../presetion/pages/Home";
-import { Products } from "../../presetion/pages/Products";
+import { Home } from "../../presetion/pages/home";
+import { Products } from "../../presetion/pages/products";
 
 export default function AppRoutes() {
     return (

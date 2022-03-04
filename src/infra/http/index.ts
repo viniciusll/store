@@ -1,7 +1,9 @@
 import axios from 'axios';
 
-let appHostApi = process.env.APP_HOST_API as string;
+const appHostApi = 'https://fakestoreapi.com/';
 
-let api = axios.create({
+const api = axios.create({
     baseURL: appHostApi
 });
+
+export default api;
