@@ -21,14 +21,21 @@ export const HeaderContainer = styled.header`
                 a {
                     text-decoration: none;
                     color: #202124;
+                    font-size: 22px;
                 }
 
                 .button {
                     padding: 16px 24px;
-                    background: #202124;
-                    color: #fff;
+                    background: #fff;
+                    color: #202124;
                     border-radius: 8px;
                     font-weight: 500;
+                }
+
+                .button:hover {
+                    background: #202124;
+                    color: #fff;
+                    transition-delay: 0.3s;
                 }
             }
         }
