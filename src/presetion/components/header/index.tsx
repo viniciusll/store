@@ -1,5 +1,7 @@
 import * as Styled from './styles';
 
+import { BsFillCartFill } from 'react-icons/bs';
+
 export function Header() {
   return (
     <Styled.HeaderContainer>
@@ -7,10 +9,12 @@ export function Header() {
       <nav className='navigation'>
           <ul>
             <li>
-                <a href="/products">products</a>
+                <a href="/products">Produtos</a>
             </li>
             <li>
-                <a className='button' href="/cart">cart</a>
+                <a className='button' href="/cart">
+                  <BsFillCartFill />
+                </a>
             </li>
           </ul>
       </nav>

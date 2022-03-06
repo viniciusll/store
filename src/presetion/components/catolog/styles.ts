@@ -66,6 +66,7 @@ export const CatalogContainer = styled.div`
 
                     button {
                         width: 48px;
+                        font-size: 22px;
                         height: 48px;
                         border-radius: 100%;
                         background: #ff872c;

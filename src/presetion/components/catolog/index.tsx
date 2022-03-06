@@ -1,6 +1,7 @@
 import * as Styled from './styles';
 
 import ImageProduct from '../../../assets/product-01.jpg';
+import { BsFillCartPlusFill } from 'react-icons/bs';
 
 export function Catalog() {
     const products = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -19,7 +20,9 @@ export function Catalog() {
                                 <span>Price</span>
                                 <div className="price">
                                     <span>$500</span>
-                                    <button>C</button>
+                                    <button>
+                                        <BsFillCartPlusFill />
+                                    </button>
                                 </div>
                             </div>
                         </div>
