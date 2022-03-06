@@ -3,7 +3,7 @@ import * as Styled from './styles';
 import ImageProduct from '../../../assets/product-01.jpg';
 
 export function Catalog() {
-    const products = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const products = [1, 2, 3, 4, 5, 6, 7, 8];
     
     return (
         <Styled.CatalogContainer>

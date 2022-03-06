@@ -1,4 +1,4 @@
-import { Header, Banner, Catalog } from '../../components';
+import { Header, Banner, Catalog, Footer } from '../../components';
 
 export function Home() {
   return (
@@ -6,6 +6,7 @@ export function Home() {
       <Header />
       <Banner />
       <Catalog />
+      <Footer />
     </>
   );
 };
