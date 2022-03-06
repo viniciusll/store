@@ -4,15 +4,14 @@ export const ImageContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 600px;
     padding: 0 16px;
-
+    overflow: hidden;
+    
     img {
         width: 100%;
-        max-width: 1400px;
-        height: 600px;
-        object-fit: cover;
+        max-width: 1250px;
         border-radius: 16px;
+        max-height: 600px;
+        object-fit: contain;
     }
 `;
