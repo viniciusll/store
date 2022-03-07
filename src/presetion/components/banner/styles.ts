@@ -9,9 +9,9 @@ export const ImageContainer = styled.div`
     
     img {
         width: 100%;
-        max-width: 1250px;
+        max-width: 1400px;
         border-radius: 16px;
         max-height: 600px;
-        object-fit: contain;
+        object-fit: cover;
     }
 `;
