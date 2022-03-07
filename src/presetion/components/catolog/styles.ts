@@ -26,16 +26,19 @@ export const CatalogContainer = styled.div`
             gap: 32px;
         }
 
-        .items {
+        .item {
             border: 1px solid #e6e6e6;
             border-radius: 8px;
             width: 100%;
+            height: 400px;
+            position: relative;
 
             img {
                 width: 100%;
                 height: 200px;
-                object-fit: cover;
+                object-fit: contain;
                 border-radius: 8px 8px 0 0;
+                padding: 8px;
             }
 
             .producDetail {
@@ -50,6 +53,12 @@ export const CatalogContainer = styled.div`
                     font-size: 18px;
                     color: #202124;
                     margin: 16px 0;
+                    max-width: 100%;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2; 
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
                 }
 
                 .price {
@@ -57,6 +66,11 @@ export const CatalogContainer = styled.div`
                     align-items: center;
                     justify-content: space-between;
                     margin-top: 16px;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    right: 0;
+                    padding: 16px;
 
                     span {
                         font-size: 16px;
@@ -76,6 +90,7 @@ export const CatalogContainer = styled.div`
                         align-items: center;
                         border: none;
                         color: #fff;
+                        cursor: pointer;
                         box-shadow: rgb(0 0 0 / 10%) 0px 9px 16px, rgb(0 0 0 / 32%) 0px 2px 2px;
                     }
                 }

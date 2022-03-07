@@ -8,6 +8,11 @@ export const HeaderContainer = styled.header`
     border-bottom: 1px solid #ccc;
     margin-bottom: 32px;
 
+    .logo {
+        max-width: 100px;
+        height: auto;
+    }
+
     .navigation {
         display: flex;
         

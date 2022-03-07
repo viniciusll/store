@@ -12,14 +12,11 @@ export const FooterContainer = styled.footer`
     }
 
     .social > a {
+        display: flex;
         font-size: 20px;
         width: 40px;
         height: 40px;
-        line-height: 40px;
         display: inline-block;
-        text-align: center;
-        border-radius: 50%;
-        border: 1px solid #ccc;
         margin: 0 8px;
         color: inherit;
     }

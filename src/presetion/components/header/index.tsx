@@ -1,11 +1,12 @@
 import * as Styled from './styles';
 
 import { BsFillCartFill } from 'react-icons/bs';
+import Logo from '../../../assets/logo.png';
 
 export function Header() {
   return (
     <Styled.HeaderContainer>
-      <h1>Logo</h1>
+      <img className="logo" src={Logo} alt="Logo company" />
       <nav className='navigation'>
           <ul>
             <li>
