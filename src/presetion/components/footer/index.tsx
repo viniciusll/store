@@ -11,16 +11,13 @@ export function Footer() {
     return (
         <Styled.FooterContainer>
             <div className="social">
-                <a href="#">
+                <a href="https://www.instagram.com/is.not.defined/">
                     <BsInstagram />
                 </a>
-                <a href="#">
-                    <BsFacebook />
-                </a>
-                <a href="#">
+                <a href="https://twitter.com/Rivers44336326">
                     <BsTwitter />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/vinicius-martins-0401381a0/">
                     <BsLinkedin />
                 </a>
             </div>

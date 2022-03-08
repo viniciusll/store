@@ -6,7 +6,7 @@ import Logo from '../../../assets/logo.png';
 export function Header() {
   return (
     <Styled.HeaderContainer>
-      <img className="logo" src={Logo} alt="Logo company" />
+      <a href="/"><img className="logo" src={Logo} alt="Logo company" /></a>
       <nav className='navigation'>
           <ul>
             <li>
