@@ -8,6 +8,7 @@ import {
 
 import { Home } from "../../presetion/pages/home";
 import { Products } from "../../presetion/pages/products";
+import { Cart } from "../../presetion/pages/cart";
 
 export default function AppRoutes() {
     return (
@@ -15,6 +16,7 @@ export default function AppRoutes() {
             <Routes>
                 <Route path="/" element={<Home />} /> 
                 <Route path="/products" element={<Products />} />
+                <Route path="/cart" element={<Cart />} />
             </Routes>
         </Router>
     );
