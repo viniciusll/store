@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import * as Styled from './styles';
+import { HeaderContainer } from './styles';
 
 import { BsFillCartFill } from 'react-icons/bs';
 import Logo from '../../../assets/logo.png';
@@ -8,7 +8,7 @@ import Logo from '../../../assets/logo.png';
 export function Header() {
   
   return (
-    <Styled.HeaderContainer>
+    <HeaderContainer>
       <Link to="/"><img className="logo" src={Logo} alt="Logo company" /></Link>
       <nav className='navigation'>
           <ul>
@@ -22,6 +22,6 @@ export function Header() {
             </li>
           </ul>
       </nav>
-    </Styled.HeaderContainer>
+    </HeaderContainer>
   );
 };

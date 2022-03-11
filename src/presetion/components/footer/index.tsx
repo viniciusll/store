@@ -1,4 +1,4 @@
-import * as Styled from './styles';
+import { FooterContainer } from './styles';
 
 import { 
     BsInstagram, 
@@ -9,7 +9,7 @@ import {
 
 export function Footer() {
     return (
-        <Styled.FooterContainer>
+        <FooterContainer>
             <div className="social">
                 <a href="https://www.instagram.com/is.not.defined/">
                     <BsInstagram />
@@ -39,6 +39,6 @@ export function Footer() {
                 </li>
             </ul>
             <p className="copyright">Vinicius Martins © 2022</p>
-        </Styled.FooterContainer>
+        </FooterContainer>
     );
 };

@@ -1,7 +1,11 @@
+import { ListProduct, Header, Footer } from "../../components";
+
 export function Products() {
     return (
-      <div>
-        <h1>Products</h1>
-      </div>
+      <>
+        <Header />
+        <ListProduct />
+        <Footer />
+      </>
     );
 };
