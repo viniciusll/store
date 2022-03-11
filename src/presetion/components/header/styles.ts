@@ -36,12 +36,12 @@ export const HeaderContainer = styled.header`
                     color: #202124;
                     border-radius: 8px;
                     font-weight: 500;
+                    transition: 1s;
                 }
 
                 .button:hover {
                     background: #202124;
                     color: #fff;
-                    transition-delay: 0.3s;
                 }
             }
         }
