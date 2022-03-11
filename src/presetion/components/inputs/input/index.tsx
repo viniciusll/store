@@ -4,12 +4,10 @@ import React, {
 } from 'react';
 
 import { InputProps } from '../../../../domain/interfaces';
-import { InputContainer } from './styles';
+import { Input as InputStyled } from './styles';
 
 export function Input<InputProps>({ ...props }) {
     return(
-        <InputContainer>
-            <input {...props} />
-        </InputContainer>
+        <InputStyled {...props} />
     );
 };

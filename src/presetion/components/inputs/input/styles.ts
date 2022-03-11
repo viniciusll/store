@@ -1,16 +1,14 @@
 import styled from 'styled-components';
 
-export const InputContainer = styled.div`
+export const Input = styled.input`
 
-    input {
-        text-indent: 10px;
-        border: 1px solid #ccc;
-        width: 500px;
-        height: 50px;
-        border-radius: 10px;
-    }
+    text-indent: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
 
-    input::placeholder {
+    &::placeholder {
         color: #ccc;
     }
 `;
