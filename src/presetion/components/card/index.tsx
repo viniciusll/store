@@ -10,14 +10,13 @@ export function Card<CardInterface>({ ...props }) {
     return (
         <CardContainer>
             <div className="content">
-                <h1 className="title">Produtos</h1>
+                <h1 className="title">{props.title}</h1>
                 <div className="catalogProduct">
                     {products.map((product: ProductModel) => (
                         <div className="item" key={product.id}>
                             <img src={product.image} alt="product image" />
                             <div className="producDetail">
                                 <h2>{product.title}</h2>
-                                <span>Price</span>
                                 <div className="price">
                                     <span>${product.price.toFixed(2)}</span>
                                     <button>
