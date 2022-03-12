@@ -6,3 +6,5 @@ export * from './inputs';
 export * from './forms';
 export * from './item';
 export * from './listProduct';
+export * from './card';
+export * from './loader';
