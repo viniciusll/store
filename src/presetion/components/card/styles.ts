@@ -61,6 +61,18 @@ export const CardContainer = styled.div`
                     overflow: hidden;
                 }
 
+                p {
+                    font-size: 14px;
+                    color: #969696;
+                    margin: 16px 0;
+                    max-width: 100%;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2; 
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+
                 .price {
                     display: flex;
                     align-items: center;
