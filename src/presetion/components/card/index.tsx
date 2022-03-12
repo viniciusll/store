@@ -17,6 +17,7 @@ export function Card<CardInterface>({ ...props }) {
                             <img src={product.image} alt="product image" />
                             <div className="producDetail">
                                 <h2>{product.title}</h2>
+                                <p>{product.description}</p>
                                 <div className="price">
                                     <span>${product.price.toFixed(2)}</span>
                                     <button>
