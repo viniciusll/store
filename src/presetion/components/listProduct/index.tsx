@@ -17,7 +17,7 @@ export function ListProduct() {
 
     return (
         <ListProductContainer>
-            <Card products={listProducts} />
+            <Card products={listProducts} title="Produtos"/>
         </ListProductContainer>
     )
 };

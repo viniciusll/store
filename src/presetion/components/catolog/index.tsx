@@ -17,7 +17,7 @@ export function Catalog() {
     
     return (
         <CatalogContainer>
-           <Card products={products} />
+           <Card products={products} title="Produtos mais vendidos" />
         </CatalogContainer>
     );
 };
