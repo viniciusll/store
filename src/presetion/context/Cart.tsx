@@ -18,12 +18,6 @@ export default function CartProvider({ children }: Props) {
     const [cartProducts, setCartProducts] = useState<ProductModel[]>([]);
     
     function handleSetProducts(products: ProductModel[]) {
-        const isSomeRepeated = products.some((product: ProductModel) => {
-            const productInCart = cartProducts.find((cartProduct: ProductModel) => cartProduct.id === product.id);
-            return productInCart !== undefined;
-        });
-
-        if (isSomeRepeated) return;
 
         setCartProducts(products);
         CartStorage.setProductsToCart(products);
