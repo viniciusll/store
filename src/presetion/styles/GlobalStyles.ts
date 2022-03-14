@@ -7,6 +7,13 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         font-weight: 400;
     }
+
+    body, html {
+        overflow: auto;
+        height: 100vh;
+        width: 100vw;
+    }
+
     *, input, button {
         font-family: 'Roboto', sans-serif;
     }

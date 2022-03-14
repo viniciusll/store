@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { CatalogContainer } from './styles';
 import { Card, Loader } from '../../components';
 
-import { GetProductLimitResults } from '../../context';
+import { GetProductLimitResults } from '../../../infra/services';
 import { ProductModel } from '../../../domain/models/product-model';
 
 export function Catalog() {

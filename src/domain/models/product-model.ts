@@ -4,7 +4,7 @@ type ratingProps = {
 };
 
 export type ProductModel = {
-    id: number;
+    id: string;
     title: string;
     price: number;
     description: string;

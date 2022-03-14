@@ -1,18 +1,21 @@
-import ProductImage from '../../../assets/product-01.jpg';
-
 import { InfoProduto as InfoProdutosStyled } from './styles';
 
-export function InfoProduto() {
+import { InfoProdutoInterface } from '../../../domain/interfaces';
+import { ProductModel } from '../../../domain/models/product-model';
+
+export function InfoProduto<InfoProdutoInterface>({...props}) {
+    const product = props.product as ProductModel;
+
     return (
         <InfoProdutosStyled>
             <div className="info-produto-wrapper">
-                <img src={ProductImage} alt="product image" />
+                <img src={product.image} alt="product image" />
                 <div>
-                    <h3>Product name</h3>
-                    <p>Categoria</p>
+                    <h3>{product.title}</h3>
+                    <p>{product.category}</p>
                 </div>
             </div>
-            <span>$1.99</span>
+            <span>${product.price}</span>
         </InfoProdutosStyled>
     )
 };

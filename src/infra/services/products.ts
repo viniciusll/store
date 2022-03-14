@@ -1,6 +1,6 @@
 import { ProductModel } from '../../domain/models/product-model';
 
-import api from '../../infra/http';
+import api from '../http';
 
 export async function GetAllProducts() {
     const response = await api.get('/products');

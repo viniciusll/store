@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { GetAllProducts } from '../../context';
+import { GetAllProducts } from '../../../infra/services';
 import { ProductModel } from '../../../domain/models/product-model';
 
 import { Card, Loader } from '../../components';
