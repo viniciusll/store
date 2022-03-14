@@ -51,7 +51,7 @@ export const InfoProduto = styled.div`
         align-items: center;
 
         img { 
-            width: 100px;
+            width: 60px;
             height: 100%;
             border-radius: 10px;
         }
@@ -64,10 +64,10 @@ export const InfoProduto = styled.div`
             font-size: 18px;
             color: #202124;
             margin-left: 15px;
-            max-width: 100%;
+            max-width: 250px;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 2; 
+            -webkit-line-clamp: 1; 
             -webkit-box-orient: vertical;
             overflow: hidden;
         }

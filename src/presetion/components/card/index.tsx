@@ -1,11 +1,19 @@
 import { CardContainer } from './styles';
+import { BsFillCartPlusFill } from 'react-icons/bs';
 
 import { CardInterface } from '../../../domain/interfaces';
 import { ProductModel } from '../../../domain/models/product-model';
-import { BsFillCartPlusFill } from 'react-icons/bs';
+import { useCart } from '../../context';
 
 export function Card<CardInterface>({ ...props }) {
     const products = props.products as ProductModel[];
+
+    const {getProducts, handleSetProducts} = useCart();
+
+    function handleAddProductToCart(product: ProductModel) {
+        const newProducts = [...getProducts, product];
+        handleSetProducts(newProducts);
+    };
 
     return (
         <CardContainer>
@@ -20,7 +28,7 @@ export function Card<CardInterface>({ ...props }) {
                                 <p>{product.description}</p>
                                 <div className="price">
                                     <span>${product.price.toFixed(2)}</span>
-                                    <button>
+                                    <button onClick={() => handleAddProductToCart(product)}>
                                         <BsFillCartPlusFill />
                                     </button>
                                 </div>
