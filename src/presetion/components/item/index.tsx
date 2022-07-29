@@ -3,10 +3,15 @@ import { ProductModel } from '../../../domain/models/product-model';
 import { Item as ItemStyled } from './styles';
 import { InfoProduto } from './InfoProduto';
 import { useCart, getTotal } from '../../context';
+import { BsFillTrashFill } from "react-icons/bs";
 
 export function Item() {
-    const { getProducts } = useCart();
+    const { getProducts, handleClearCart } = useCart();
     const total = getTotal();
+
+    function handleAddProductToCart() {
+        handleClearCart();
+    };
     
     return (
         <ItemStyled>
@@ -19,6 +24,10 @@ export function Item() {
                     <span>${total}</span>
                 </div>
             </div>
+
+            <button onClick={() => handleAddProductToCart()} className='clear-btn'>
+                <BsFillTrashFill size={18} />
+            </button>
             <button>
                 Finalizar
             </button>
